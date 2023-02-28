@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/app.js" defer></script>
+    <title>Electron Keyboard</title>
+  </head>
+  <body>
+    <div id="piano">
+      <div class="toppart">
+        <h1 class="noselect">Ol' reliable</h1>
+        <label class="label"><p class="noselect">Learning mode</p>
+          <label class="toggle" for="myToggle">
+              <input class="toggle__input" type="checkbox" id="myToggle">
+              <div class="toggle__fill"></div>
+          </label></label>
+      </div>
+      <div class="keys">
+          <div class="white-key key"><span>1</span><div id="key__div" class="noselect note__name unactive">q</div></div> <!--WHITE-->
+          <div class="black-key key"><div id="key__div" class="noselect note__name unactive">a</div></div>
+          <div class="white-key key"><div id="key__div" class="noselect note__name unactive">w</div></div> <!--WHITE-->
+          <div class="black-key key"><div id="key__div" class="noselect note__name unactive">s</div></div>
+          <div class="white-key key"><div id="key__div" class="noselect note__name unactive">e</div></div> <!--WHITE-->
+          <div class="black-key key"><div id="key__div" class="noselect note__name unactive">d</div></div>
+          <div class="white-key key"><div id="key__div" class="noselect note__name unactive">r</div></div> <!--WHITE-->
+          <div class="white-key key"><span class="noselect">8</span><div id="key__div" class="noselect note__name unactive">f</div></div> <!--WHITE-->
+          <div class="black-key key"><div id="key__div" class="noselect note__name unactive">t</div></div>
+          <div class="white-key key"><div id="key__div" class="noselect note__name unactive">g</div></div> <!--WHITE-->
+          <div class="black-key key"><div id="key__div" class="noselect note__name unactive">y</div></div>
+          <div class="white-key key"><div id="key__div" class="noselect note__name unactive">h</div></div> <!--WHITE-->
+          <div class="white-key key"><span class="noselect">13</span><div id="key__div" class="noselect note__name unactive">u</div></div> <!--WHITE-->
+          <div class="black-key key"><div id="key__div" class="noselect note__name unactive">j</div></div>
+          <div class="white-key key"><div id="key__div" class="noselect note__name unactive">i</div></div> <!--WHITE-->
+          <div class="black-key key"><div id="key__div" class="noselect note__name unactive">k</div></div>
+          <div class="white-key key"><div id="key__div" class="noselect note__name unactive">o</div></div> <!--WHITE-->
+          <div class="black-key key"><div id="key__div" class="noselect note__name unactive">l</div></div>
+          <div class="white-key key"><div id="key__div" class="noselect note__name unactive">p</div></div> <!--WHITE-->
+          <div class="white-key key"><span class="noselect">20</span><div id="key__div" class="noselect note__name unactive">;</div></div> <!--WHITE-->
+          <div class="black-key key"><div id="key__div" class="noselect note__name unactive">[</div></div>
+          <div class="white-key key"><div id="key__div" class="noselect note__name unactive">=</div></div> <!--WHITE-->
+          <div class="black-key key"><div id="key__div" class="noselect note__name unactive">]</div></div>
+          <div class="white-key key"><div id="key__div" class="noselect note__name unactive">\</div></div> <!--WHITE-->
+      </div>
+    </div>
+  </body>
+</html>

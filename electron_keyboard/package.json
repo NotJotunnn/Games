@@ -1,0 +1,15 @@
+{
+  "name": "The Eletric Keyboard",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./src/electron/main.js",
+  "scripts": {
+    "dev": "electron .",
+    "build": "npx electron-packager . --icon src/assets/favicon-16x16.icns --out=packages && mv packages ~/Downloads",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "electron": "^20.2.0",
+    "vite": "^3.1.0"
+  }
+}

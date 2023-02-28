@@ -1,0 +1,157 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    gap: 35px;
+
+    background-color: #008080;
+
+    overflow: hidden;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: 300px;
+
+    gap: 15px;
+
+    background-color: brown;
+    border: 10px solid orange;
+
+    position: fixed;
+
+    translate: 0px -5000px;
+    transition: translate 800ms cubic-bezier(.54,-0.44,.44,1.39);
+}
+
+.modal select, .modal button {
+    width: 250px;
+    height: 50px;
+
+    font-size: 24px;
+}
+
+.table {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 15px;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+
+    translate: 0px -5000px;
+    transition: translate 800ms cubic-bezier(.54,-0.44,.44,1.39);
+}
+
+.card {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 120px;
+    height: 170px;
+}
+
+.card-content {
+    width: 100px;
+    height: 150px;
+
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+
+.hide {
+    width: 250px;
+    height: 50px;
+
+    font-size: 32px;
+
+    translate: 0px -5000px;
+    transition: translate 800ms cubic-bezier(.54,-0.44,.44,1.39);
+}
+
+.reveal {
+    animation: reveal 1s normal forwards;
+}
+
+.right {
+    animation: right 600ms normal forwards;
+}
+
+.selected {
+    outline: 10px solid #b94400;
+}
+
+@keyframes reveal {
+    0% {
+        width: 100%;
+        background-color: var(--background-color);
+    }
+
+    25% {
+        width: 50%;
+        background-color: var(--background-color);
+    }
+
+    50% {
+        width: 0%;
+        background-color: var(--background-color);
+    }
+
+    75% {
+        width: 50%;
+        background-color: var(--background-color);
+    }
+
+    100% {
+        width: 100%;
+        background-color:white;
+    }
+}
+
+@keyframes right {
+    0% {
+        width: 100%;
+        background-color: white;
+    }
+
+    25% {
+        width: 50%;
+        background-color: white;
+    }
+
+    50% {
+        width: 0%;
+        background-color: white;
+    }
+
+    75% {
+        width: 50%;
+        background-color: var(--background-color);
+    }
+
+    100% {
+        width: 100%;
+        background-color: var(--background-color);
+    }
+}
+
+.on-screen {
+    translate: 0px 0px;
+}

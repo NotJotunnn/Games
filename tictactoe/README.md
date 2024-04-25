@@ -31,8 +31,7 @@
 
 Para qualquer um novo no gênero, este foi o jogo escolar original!
 
-This project has been done all by myself, nothing but inspiration was derived from searches, no code has been copied (You can tell by the quality lol).
-O projeto foi feito todo por mim mesmo, nada além inspiração foi derivado de pesquisas, sem cópias de código (Pode apostar)
+O projeto foi feito todo por mim mesmo, nada além inspiração foi derivado de pesquisas, sem cópias de código (Pode apostar).
 
 ### Praticado:
     1. Event listeners (primeira vez usando event.target de forma "Legal" rsrs)
